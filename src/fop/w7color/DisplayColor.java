@@ -32,7 +32,7 @@ public class DisplayColor
     }
 
     public static void main(String[] args) { // Here trying out own colors
-        RgbColor rgbColor = new RgbColor(31, 1242352424, 21, 33);
+        RgbColor rgbColor = new RgbColor(31, 22, 21, 33);
         displayColor(rgbColor);
     }
     
