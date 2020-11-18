@@ -10,11 +10,12 @@ import javax.swing.WindowConstants;
  * <p>
  * Modifications are not accounted for.
  */
-public class DisplayColor {
+public class DisplayColor 
+{
 
     // For testing, remove comment markers!
-    /*
-    public static void displayColor(RgbColor8Bit c) {
+    
+    public static void displayColor(RgbColor c) {
         JFrame jf = new JFrame("Color Test") {
 
             @Override
@@ -31,8 +32,8 @@ public class DisplayColor {
     }
 
     public static void main(String[] args) { // Here trying out own colors
-        RgbColor rgbColor = new RgbColor(2, 3, 0, 0);
-        displayColor(rgbColor.toRgbColor8Bit());
+        RgbColor rgbColor = new RgbColor(31, 1242352424, 21, 33);
+        displayColor(rgbColor);
     }
-    */
+    
 }
