@@ -35,8 +35,10 @@ public class RgbColor
 		return bitDepth;
 	}
 	
-	
-	
-	
+	public RgbColor8Bit toRgbColor8Bit()
+	{
+		RgbColor8Bit temp = null;
+		return temp;
+	}
 
 }
