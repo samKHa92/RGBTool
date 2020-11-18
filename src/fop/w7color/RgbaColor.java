@@ -4,7 +4,7 @@ public class RgbaColor extends RgbColor
 {
 	private final int alpha;
 	
-	RgbaColor(int bitDepth, int red, int green, int blue, int alpha)
+	public RgbaColor(int bitDepth, int red, int green, int blue, int alpha)
 	{
 		super(bitDepth, red, green, blue);
 		this.alpha = alpha;
