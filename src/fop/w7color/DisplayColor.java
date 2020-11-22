@@ -14,7 +14,6 @@ public class DisplayColor
 {
 
     // For testing, remove comment markers!
-    /*
     public static void displayColor(RgbColor c) {
         JFrame jf = new JFrame("Color Test") {
 
@@ -35,5 +34,5 @@ public class DisplayColor
         RgbColor rgbColor = new RgbColor(31, 2, 3, 4);
         displayColor(rgbColor);
     }
-    */
+
 }
