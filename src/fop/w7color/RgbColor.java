@@ -52,9 +52,9 @@ public class RgbColor
 			int finalGreen = green / IntMath.powerOfTwo(bitDepth-8-1);
 			int finalBlue = blue / IntMath.powerOfTwo(bitDepth-8-1);
 			
-			if(finalRed % 2 == 1 && finalRed != 511) finalRed++;
-			if(finalGreen % 2 == 1 && finalGreen != 511) finalGreen++;
-			if(finalBlue % 2 == 1 && finalBlue != 511) finalBlue++;
+			if(finalRed % 2 == 1 && finalRed != 511 && red != 0) finalRed++;
+			if(finalGreen % 2 == 1 && finalGreen != 511 && green != 0) finalGreen++;
+			if(finalBlue % 2 == 1 && finalBlue != 511 && blue != 0) finalBlue++;
 			
 			finalRed /= 2;
 			finalGreen /= 2;
