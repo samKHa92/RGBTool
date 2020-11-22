@@ -76,6 +76,9 @@ public class RgbColor
 				finalGreen++;
 				finalBlue++;
 			}
+			if(red == 0) finalRed = 0;
+			if(blue == 0) finalBlue = 0;
+			if(green == 0) finalGreen = 0;
 			temp = new RgbColor8Bit(finalRed, finalGreen, finalBlue);
 		}
 		
