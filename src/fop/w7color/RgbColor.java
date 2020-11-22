@@ -46,8 +46,8 @@ public class RgbColor
 	public RgbColor8Bit toRgbColor8Bit()
 	{
 		RgbColor8Bit temp = null;
-		if(bitDepth > 8)
-		{
+		//if(bitDepth > 8)
+		//{
 			int finalRed = red / IntMath.powerOfTwo(bitDepth-8-1);
 			int finalGreen = green / IntMath.powerOfTwo(bitDepth-8-1);
 			int finalBlue = blue / IntMath.powerOfTwo(bitDepth-8-1);
@@ -57,7 +57,7 @@ public class RgbColor
 			if((blue / IntMath.powerOfTwo(bitDepth-8-1)) % 2 == 1) finalBlue++;
 			
 			temp = new RgbColor8Bit (finalRed, finalGreen, finalBlue);
-		}
+	//	}
 		return temp;
 	}
 
