@@ -9,30 +9,30 @@ public class RgbColor
 	
 	public RgbColor(int bitDepth, int red, int green, int blue)
 	{
-		if(red >= 0 && red < IntMath.powerOfTwo(bitDepth)-1)
+		/*if(red >= 0 && red < IntMath.powerOfTwo(bitDepth)-1)
 			this.red = red;
 		else
-		{
-			ExceptionUtil.unsupportedOperation("Red is out of range");
+		{*/
+		//	ExceptionUtil.unsupportedOperation("Red is out of range");
 			this.red = red;
-		}
+		//}
 		
 		
-		if(green >= 0 && green < IntMath.powerOfTwo(bitDepth)-1)
+		/*if(green >= 0 && green < IntMath.powerOfTwo(bitDepth)-1)
 			this.green = green;
 		else
 		{
-			ExceptionUtil.unsupportedOperation("Green is out of range");
+			ExceptionUtil.unsupportedOperation("Green is out of range");*/
 			this.green = green;
-		}
+		//}
 		
-		if(blue >= 0 && blue < IntMath.powerOfTwo(bitDepth)-1)
+		/*if(blue >= 0 && blue < IntMath.powerOfTwo(bitDepth)-1)
 			this.blue = blue;
 		else
-		{
-			ExceptionUtil.unsupportedOperation("Blue is out of range");
+		{*/
+		//	ExceptionUtil.unsupportedOperation("Blue is out of range");
 			this.blue = blue;
-		}
+		//}
 		
 		this.bitDepth = bitDepth;
 	}
