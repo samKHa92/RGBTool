@@ -8,6 +8,8 @@ public class RgbaColor extends RgbColor
 	{
 		super(bitDepth, red, green, blue);
 		this.alpha = alpha;
+		if(alpha > IntMath.powerOfTwo(bitDepth)-1 || alpha < 0)
+			ExceptionUtil.unsupportedOperation("Wrong value for alpha channel.");
 	}
 
 	public int getAlpha() 
@@ -18,8 +20,10 @@ public class RgbaColor extends RgbColor
 	@Override
 	public RgbColor8Bit toRgbColor8Bit()
 	{
-		RgbColor8Bit temp = null;
-		return temp;
+		if(alpha == IntMath.powerOfTwo(super.getBitDepth())-1)
+			return super.toRgbColor8Bit();
+		ExceptionUtil.unsupportedOperation("Alpha channel is not maximal");
+		return null;
 	}
 
 }

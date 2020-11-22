@@ -10,7 +10,6 @@ public class RgbColor8Bit extends RgbColor
 	@Override
 	public RgbColor8Bit toRgbColor8Bit()
 	{
-		RgbColor8Bit temp = new RgbColor8Bit (super.getRed(), super.getGreen(), super.getBlue());
-		return temp;
+		return super.toRgbColor8Bit();
 	}
 }

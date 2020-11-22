@@ -65,7 +65,23 @@ public class RgbColor
 		
 		if(bitDepth < 8 && bitDepth > 0)
 		{
-			
+			int maxValue = IntMath.powerOfTwo(bitDepth)-1;
+			int coef = 255/maxValue;
+			int finalRed = red * coef;
+			int finalGreen = green * coef;
+			int finalBlue = blue * coef;
+			if(255%maxValue > 0) 
+			{
+				finalRed++;
+				finalGreen++;
+				finalBlue++;
+			}
+			temp = new RgbColor8Bit(finalRed, finalGreen, finalBlue);
+		}
+		
+		if(bitDepth == 8)
+		{
+			temp = new RgbColor8Bit(red, green, blue);
 		}
 		return temp;
 	}
