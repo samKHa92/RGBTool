@@ -67,15 +67,16 @@ public class RgbColor
 		{
 			int maxValue = IntMath.powerOfTwo(bitDepth)-1;
 			int coef = 255/maxValue;
+			//int additionalCoef = 0;
 			int finalRed = red * coef;
 			int finalGreen = green * coef;
 			int finalBlue = blue * coef;
-			if(255%maxValue > 0) 
+			/*if(255%maxValue > 0) 
 			{
 				finalRed++;
 				finalGreen++;
 				finalBlue++;
-			}
+			}*/
 			if(red == 0) finalRed = 0;
 			if(blue == 0) finalBlue = 0;
 			if(green == 0) finalGreen = 0;
