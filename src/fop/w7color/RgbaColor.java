@@ -14,11 +14,12 @@ public class RgbaColor extends RgbColor
 	{
 		return alpha;
 	}
-	
+	/*
 	public RgbColor8Bit toRgbColor8Bit()
 	{
 		RgbColor8Bit temp = null;
 		return temp;
 	}
+	*/
 
 }
