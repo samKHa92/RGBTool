@@ -13,6 +13,14 @@ public class RgbColor
 		this.green = green;
 		this.blue = blue;
 		this.bitDepth = bitDepth;
+		if(bitDepth <= 0 || bitDepth > 31)
+			ExceptionUtil.unsupportedOperation("Wrong value for bitDepth.");
+		if(red > IntMath.powerOfTwo(bitDepth)-1 || red < 0)
+			ExceptionUtil.unsupportedOperation("Wrong value for red.");
+		if(green > IntMath.powerOfTwo(bitDepth)-1 || green < 0)
+			ExceptionUtil.unsupportedOperation("Wrong value for green.");
+		if(blue > IntMath.powerOfTwo(bitDepth)-1 || blue < 0)
+			ExceptionUtil.unsupportedOperation("Wrong value for blue.");
 	}
 
 	public int getRed() 
