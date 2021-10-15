@@ -66,11 +66,10 @@ public class RgbColor
 		if(bitDepth < 8 && bitDepth > 0)
 		{
 			int maxValue = IntMath.powerOfTwo(bitDepth)-1;
-			int tempBitDepth = bitDepth;
 			int newBitDepth = 0;
 			
 			while(newBitDepth<8)
-				newBitDepth+=tempBitDepth;
+				newBitDepth+=this.bitDepth;
 			
 			int coef = (IntMath.powerOfTwo(newBitDepth)-1) / maxValue;
 			
